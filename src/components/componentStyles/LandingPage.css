@@ -9,3 +9,19 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+h2 {
+  font-family: "Lobster";
+  font-size: 180px;
+  line-height: 10rem;
+  padding-bottom: 5rem;
+}
+
+h1 {
+  font-size: 150px;
+  line-height: 5rem;
+}
+
+img {
+  padding-top: 8rem;
+}
