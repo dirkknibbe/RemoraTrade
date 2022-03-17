@@ -21,7 +21,7 @@ export default function LoginForm(props) {
   };
 
   return (
-    <form id="loginForm" onSubmit={onSubmit}>
+    <form id="loginForm" onSubmit={onSubmit} className="form">
       <h2>Login</h2>
       <input
         maxLength={20}
