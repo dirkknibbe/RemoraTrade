@@ -10,12 +10,15 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-h1 {
-  font-family: "Lobster";
-  font-size: 160px;
-}
-
 img {
   padding-top: 1rem;
   padding-right: 3rem;
+}
+.titleLogo {
+  padding-top: 4rem;
+  font-family: "Lobster";
+  color: white;
+  font-size: 190px;
+  display: flex;
+  justify-content: center;
 }

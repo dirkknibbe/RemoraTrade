@@ -20,7 +20,7 @@ export default function LoginForm(props) {
   };
 
   return (
-    <form id="loginForm" onSubmit={onSubmit} className="form">
+    <form id="loginForm" onSubmit={onSubmit} className="login">
       <h2>Login</h2>
       <input
         maxLength={20}
@@ -37,7 +37,9 @@ export default function LoginForm(props) {
         type="password"
         id="password"
       />
-      <button id="submitCredentials">Submit</button>
+      <button className="glow-on-hover" id="submitCredentials">
+        Submit
+      </button>
     </form>
   );
 }

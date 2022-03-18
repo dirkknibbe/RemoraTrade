@@ -44,7 +44,9 @@ export default function Contact(props) {
         placeholder="the details..."
         id="notes"
       />
-      <button id="submitCredentials">Submit</button>
+      <button className="glow-on-hover" id="submitCredentials">
+        Submit
+      </button>
     </form>
   );
 }

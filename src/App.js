@@ -12,6 +12,7 @@ import LandingPage from "./components/LandingPage";
 import Header from "./components/Header";
 import LoginForm from "./components/LoginForm";
 import Contact from "./components/Contact";
+import Services from "./components/Services";
 
 const loginUrl = "http://localhost:3000/login";
 
@@ -46,6 +47,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginForm login={login} />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </div>
   );

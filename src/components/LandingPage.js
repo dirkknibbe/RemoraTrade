@@ -1,11 +1,11 @@
+import RemoraLogo from "../images/Remora_fish_logo-removebg-preview.png";
 import "./componentStyles/LandingPage.css";
-import RemoraLogo from "./Remora_fish_logo-removebg-preview.png";
 
 function LandingPage() {
   return (
     <div className="App">
       <header className="App-body">
-        <h1>RemoraTrade</h1>
+        <h1 className="titleLogo">RemoraTrade</h1>
         <img src={RemoraLogo} alt="Remora Fish" />
         <h4>Like the remora fish...</h4>
         <h5>Learn to swim with the Whales and Sharks...</h5>
