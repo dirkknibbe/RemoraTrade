@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "../App.css";
-
+import "./componentStyles/LoginForm.css";
 const initialFormValues = {
   username: "",
   password: "",
@@ -35,6 +34,7 @@ export default function LoginForm(props) {
         value={values.password}
         onChange={onChange}
         placeholder="Enter password"
+        type="password"
         id="password"
       />
       <button id="submitCredentials">Submit</button>

@@ -1,27 +1,21 @@
 .App-body {
   background-color: #282c34;
   line-height: 3rem;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-h2 {
-  font-family: "Lobster";
-  font-size: 180px;
-  line-height: 10rem;
-  padding-bottom: 5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1 {
-  font-size: 150px;
-  line-height: 5rem;
+  font-family: "Lobster";
+  font-size: 160px;
 }
 
 img {
-  padding-top: 8rem;
+  padding-top: 1rem;
+  padding-right: 3rem;
 }

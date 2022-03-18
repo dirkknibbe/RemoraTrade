@@ -17,16 +17,16 @@ export default function Header(props) {
         <div>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="#">Login</a>
+              <a href="login">Login</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="services">Services</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="contact">Contact</a>
             </li>
           </ul>
         </div>
