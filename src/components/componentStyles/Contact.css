@@ -1,0 +1,45 @@
+h4 {
+  font-size: 30px;
+  color: white;
+  margin-left: 0.5rem;
+  padding: 0;
+  font-family: Lobster;
+}
+
+body {
+  padding-top: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  font-family: Caviar Dreams;
+  border-radius: 20px;
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+}
+
+button {
+  font-family: Caviar Dreams;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-left: 0.3rem;
+  padding: 0.5rem;
+  display: flex;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.notes-box {
+  font-family: Caviar Dreams;
+  border-radius: 20px;
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+}
