@@ -1,0 +1,66 @@
+const router = require("express").Router();
+
+const md = require("../auth/auth-middleware");
+
+const Account = require("../class/class-model");
+
+router.get("/", async (req, res, next) => {
+  try {
+    const accounts = await Account.getAll();
+    res.json(accounts);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.get("/:id", md.checkAccountId, async (req, res, next) => {
+  res.json(req.account);
+});
+
+router.post(
+  "/",
+  md.checkAccountPayload,
+  md.checkAccountNameUnique,
+  async (req, res, next) => {
+    try {
+      const newAccount = await Account.create(req.body);
+      res.status(201).json(newAccount);
+    } catch (err) {
+      next(err);
+    }
+  }
+);
+
+router.put(
+  "/:id",
+  md.checkAccountId,
+  md.checkAccountPayload,
+  async (req, res, next) => {
+    try {
+      const updated = await Account.updateById(req.params.id, req.body);
+      res.json(updated);
+    } catch (err) {
+      next(err);
+    }
+  }
+);
+
+router.delete("/:id", md.checkAccountId, async (req, res, next) => {
+  try {
+    await Account.deleteById(req.params.id);
+    res.json(req.account);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.use((err, req, res, next) => {
+  // eslint-disable-line
+
+  // DO YOUR MAGIC
+  res.status(err.status || 500).json({
+    message: err.message,
+  });
+});
+
+module.exports = router;
